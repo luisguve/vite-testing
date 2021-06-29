@@ -1,0 +1,36 @@
+{
+  "name": "vite-react-dolaroid",
+  "description": "Vite and React version of dolaroid frontend",
+  "repository": "https://github.com/luisguve/vite-react-dolaroid",
+  "license": "MIT",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "@reduxjs/toolkit": "^1.6.0",
+    "bootstrap": "^5.0.2",
+    "i18next": "^19.8.4",
+    "i18next-browser-languagedetector": "^6.0.1",
+    "i18next-http-backend": "^1.0.21",
+    "i18next-icu": "^1.4.2",
+    "leaflet": "^1.7.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-i18next": "^11.7.4",
+    "react-leaflet": "^3.0.2",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-refresh": "^1.3.1",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.36",
+    "redux-devtools-extension": "^2.13.9",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4",
+    "vite": "^2.3.7"
+  }
+}

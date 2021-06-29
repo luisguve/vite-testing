@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-center;
+}
+
+a {
+  @apply text-blue-500;
+  @apply no-underline;
+}
+
+a:hover {
+  @apply underline;
+}
+
+a:visited {
+  @apply text-blue-700;
+}
+
+label {
+  @apply block;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  @apply p-2;
+  @apply m-0;
+  @apply mb-2;
+  @apply box-border;
+  @apply border-2;
+  @apply border-solid;
+  @apply border-gray-400;
+  @apply rounded;
+}
+
+input:disabled {
+  @apply text-gray-400;
+}
+
+button {
+  @apply text-gray-500;
+  @apply bg-gray-50;
+  @apply outline-none;
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-300;
+  @apply active:bg-gray-100;
+  @apply rounded-2xl;
+}
+
+h1 {
+  @apply text-gray-500;
+  @apply text-3xl sm:text-5xl;
+  @apply font-thin;
+}
+
+@media (max-width: 321px) {
+  .query-container h1 {
+    font-size: 3em;
+  }
+}
+
+img {
+  @apply max-w-full;
+}
+
+/* The "responsive" class is added to the nav with JavaScript when the user 
+clicks on the icon. This class makes the nav look good on small screens
+(display the links vertically instead of horizontally) */
+@media screen and (max-width: 767px) {
+  nav.responsive .container {
+    @apply flex-col;
+  }
+  nav.responsive .business, nav.responsive .links {
+    @apply flex flex-col justify-start items-start;
+    @apply w-full;
+    @apply border-l-0;
+    @apply pl-2.5;
+    @apply text-xl;
+  }
+}
